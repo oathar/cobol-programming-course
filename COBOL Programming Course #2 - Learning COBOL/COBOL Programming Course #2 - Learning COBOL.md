@@ -3756,7 +3756,7 @@ When your program runs in an **endless loop** (a loop that never stops), it keep
 
 Here's a simple example of the problem:
 
-![](images/image171.png)
+![](Images/image171.png)
 
 **What's wrong here?**
 
@@ -3786,11 +3786,11 @@ Here's a simple example of the problem:
 - The job starts normally
 - It begins the loop and processes for a while
 
-![](images/image172.png)
+![](Images/image172.png)
 
 - Eventually, the system kills the job with S322 because it ran too long
 
-![](images/image173.png)
+![](Images/image173.png)
 
 ### How to Fix It
 
@@ -3810,7 +3810,7 @@ The problem is that the loop **never terminates**. To fix it, we add a proper ex
 
 **Test**: Save and resubmit `CBL0015J.jcl`. The program should complete within 5 seconds.
 
-![](images/image174.png)
+![](Images/image174.png)
 
 **Can't Figure It Out?**
 
@@ -3831,7 +3831,7 @@ CALL was made to a subroutine that could not be located.
 
 ### B37/D37/E37 - Dataset or PDS Index Space Exceeded
 
-We have seen that data set in z/OS have an allocated size to them. When we create many data, at one point the data set won't have enough space to store anything new.
+We have seen that dataset in z/OS have an allocated size to them. When we create many data, at one point the dataset won't have enough space to store anything new.
 
 **Reason Codes:**
 - B37 - Disk volume out of space
